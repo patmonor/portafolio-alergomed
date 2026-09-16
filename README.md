@@ -321,3 +321,178 @@ El prototipo del dashboard fue desarrollado utilizando datos reales agregados de
 
 ### AlergoMed – Costa Rica
 **Proyecto académico de Cultura y Liderazgo Digital – 2026**
+
+
+Biblioteca
+/
+README_AlergoMed_Semana_Dashboard.md
+
+
+📊 Dashboard de Cultura y Liderazgo Digital – AlergoMed
+Contexto
+Para esta actividad continúo trabajando con AlergoMed, clínica especializada en Alergología. Utilizo datos reales y agregados de la gestión de citas para convertir registros operativos en información útil para la toma de decisiones.
+
+El propósito es fortalecer una cultura y liderazgo digital basados en evidencia mediante el ciclo:
+
+Datos → Visualización → Análisis → Decisión → Intervención → Medición
+
+Organización de los datos
+Los datos se originan en la gestión cotidiana de pacientes y citas. Para el proyecto se organizaron en una estructura tabular mediante ventanas móviles bimensuales entre enero y septiembre de 2026. Cada fila representa un período y las columnas contienen métricas de actividad, estado de citas, perfil del paciente, accesibilidad, duración y calidad del dato.
+
+Los períodos se superponen, por lo que no deben sumarse como si fueran cohortes independientes. Se utilizan únicamente datos agregados, sin información identificable de pacientes.
+
+## Dominios y productos de datos
+
+| Dominio | Producto de datos | Variables principales | Utilidad |
+|---|---|---|---|
+| Pacientes | Perfil de atención | Nuevos y subsecuentes | Analizar captación y continuidad |
+| Citas | Gestión de agenda | Completadas, canceladas y ausentes | Evaluar utilización de agenda |
+| Demanda | Patrones de agendamiento | Día y horario | Adaptar disponibilidad |
+| Accesibilidad | Tiempo de espera | Antelación de agenda | Evaluar acceso a consulta |
+| Actividad asistencial | Capacidad de atención | Atendidos y pacientes por día | Planificar capacidad |
+| Tiempo | Uso de consulta | Duración promedio | Gestionar la agenda |
+| Cancelaciones | Patrón de cancelación | Día y horario | Diseñar intervenciones focalizadas |
+| Ausentismo | No asistencia | Día y horario | Mejorar confirmaciones |
+| Calidad del dato | Completitud | Campos no completados | Mejorar confiabilidad de la información |
+Alineamiento estratégico
+Existe un alineamiento entre los datos disponibles y el modelo de atención de AlergoMed, con oportunidad de avanzar hacia un uso más estratégico. Los datos están vinculados con accesibilidad, continuidad asistencial, eficiencia de agenda y experiencia del paciente. El dashboard transforma registros operativos en un producto de datos gerencial para observar tendencias, detectar variaciones y orientar intervenciones.
+
+## Relación con los seis pivotes de evolución digital
+
+| Pivote | Aplicación en AlergoMed | Indicadores relacionados | Decisión que permite |
+|---|---|---|---|
+| Acceso y uso de datos | Transformar registros en información útil | KPI del dashboard | Tomar decisiones basadas en datos |
+| Agilidad operativa | Optimizar agenda y capacidad | Pacientes por día, duración, cancelaciones y ausencias | Ajustar horarios y procesos |
+| Innovación centrada en el cliente | Comprender las preferencias del paciente | Antelación, días y horarios | Adaptar la disponibilidad |
+| Ecosistemas colaborativos | Compartir información clínica y administrativa | Dashboard integrado | Facilitar decisiones coordinadas |
+| Alineamiento dinámico | Responder a cambios en demanda y desempeño | Evolución temporal de KPI | Ajustar decisiones oportunamente |
+| Cultura y liderazgo digital | Incorporar los datos a la gestión cotidiana | KPI y calidad del dato | Pasar de percepciones a decisiones informadas |
+
+Fuente de los datos
+Para este proyecto utilizo datos reales de AlergoMed, correspondientes a métricas agregadas de citas de enero a septiembre de 2026. No utilizo el set de datos generado por el curso.
+
+1. Alineamiento con los seis pivotes
+## Relación con los seis pivotes de evolución digital
+
+| Pivote | Aplicación en AlergoMed | Datos / indicadores | Decisión que permite |
+|---|---|---|---|
+| Acceso y uso de datos | Transformar registros en información | KPI del dashboard | Tomar decisiones basadas en datos |
+| Agilidad operativa | Optimizar agenda y capacidad | Pacientes/día, duración, cancelaciones y ausencias | Ajustar horarios y procesos |
+| Innovación centrada en el cliente | Comprender preferencias del paciente | Antelación, días y horarios | Adaptar disponibilidad |
+| Ecosistemas colaborativos | Compartir información clínica y administrativa | Dashboard integrado | Facilitar decisiones coordinadas |
+| Alineamiento dinámico | Responder a cambios en demanda | Evolución temporal de KPI | Ajustar decisiones oportunamente |
+| Cultura y liderazgo digital | Incorporar datos a la gestión cotidiana | KPI y calidad del dato | Pasar de percepción a decisiones informadas |
+2. Indicadores del dashboard
+## Indicadores propuestos para el dashboard
+
+| Indicador | ¿Qué mide? | ¿Por qué medirlo? | ¿Por qué medirlo así? | Impacto esperado |
+|---|---|---|---|---|
+| Pacientes atendidos | Volumen asistencial | Conocer la demanda | Evolución por período | Planificar capacidad |
+| Pacientes/día | Intensidad diaria | Evaluar carga asistencial | Promedio comparable | Optimizar agenda |
+| % completadas | Utilización efectiva | Conocer aprovechamiento de citas | Proporción del total | Mejorar eficiencia |
+| % canceladas | Cancelación de citas | Detectar espacios liberados | Tasa comparable entre períodos | Mejorar reprogramación |
+| % ausentes | No-show | Vigilar inasistencia | Tasa sobre citas | Diseñar recordatorios |
+| % pacientes nuevos | Captación | Evaluar incorporación de pacientes | Proporción del total atendido | Monitorear crecimiento |
+| % subsecuentes | Continuidad | Evaluar seguimiento | Proporción del total atendido | Fortalecer continuidad |
+| Antelación | Accesibilidad | Conocer tiempo para obtener cita | Promedio de días | Gestionar capacidad |
+| Duración promedio | Uso del tiempo | Comprender utilización de consulta | Minutos promedio | Planificar agenda |
+| Día y horario solicitado | Preferencias del paciente | Identificar patrones de demanda | Ranking recurrente | Adaptar disponibilidad |
+| Día y horario de cancelación | Patrón de cancelación | Identificar momentos críticos | Análisis por franja | Intervenciones dirigidas |
+| Día y horario de ausencia | Patrón de no asistencia | Identificar momentos de riesgo | Análisis por franja | Confirmaciones focalizadas |
+| Completitud del dato | Calidad de información | Evaluar confiabilidad | Porcentaje de campos incompletos | Fortalecer cultura de datos |
+3. Ejemplo de los datos reales
+## Ejemplo de los datos utilizados
+
+| Período | Atendidos | Pac./día | Completadas | Canceladas | Ausentes | Nuevos | Subsecuentes | Antelación |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Ene–Feb | 234 | 15,64 | 75,27% | 22,98% | 1,75% | 15,12% | 84,88% | 28,1 días |
+| Feb–Mar | 261 | 24,59 | 70,61% | 27,70% | 1,69% | 12,40% | 87,60% | 17,5 días |
+| Mar–Abr | 258 | 21,68 | 71,65% | 26,78% | 1,57% | 14,30% | 85,70% | 20,4 días |
+| Abr–May | 247 | 20,61 | 71,07% | 27,20% | 1,72% | 16,18% | 83,02% | 23,6 días |
+| May–Jun | 234 | 18,74 | 76,12% | 22,60% | 1,28% | 15,20% | 83,40% | 25,7 días |
+| Jun–Jul | 269 | 21,35 | 72,74% | 26,06% | 1,19% | 18,63% | 81,26% | 27,7 días |
+| Jul–Ago | 261 | 22,59 | 74,71% | 23,74% | 1,56% | 18,00% | 82,00% | 24,4 días |
+| Ago–Sep | 259 | 19,55 | 73,36% | 24,39% | 2,25% | 11,00% | 89,00% | 18,5 días |
+
+
+
+## Prototipo del dashboard
+
+![Dashboard de Cultura y Liderazgo Digital de AlergoMed](Dashboard_AlergoMed_Portafolio_Final.png)
+
+
+## Relación con los seis pivotes de evolución digital
+
+| Pivote | Aplicación en AlergoMed | Indicadores relacionados | Decisión que permite |
+|---|---|---|---|
+| Acceso y uso de datos | Transformar registros en información útil | KPI del dashboard | Tomar decisiones basadas en datos |
+| Agilidad operativa | Optimizar agenda y capacidad | Pacientes por día, duración, cancelaciones y ausencias | Ajustar horarios y procesos |
+| Innovación centrada en el cliente | Comprender las preferencias del paciente | Antelación, días y horarios | Adaptar la disponibilidad |
+| Ecosistemas colaborativos | Compartir información clínica y administrativa | Dashboard integrado | Facilitar decisiones coordinadas |
+| Alineamiento dinámico | Responder a cambios en demanda y desempeño | Evolución temporal de KPI | Ajustar decisiones oportunamente |
+| Cultura y liderazgo digital | Incorporar los datos a la gestión cotidiana | KPI y calidad del dato | Pasar de percepciones a decisiones informadas |
+
+## Indicadores propuestos para el dashboard
+
+| Indicador | ¿Qué mide? | ¿Por qué medirlo? | ¿Por qué medirlo así? | Impacto esperado |
+|---|---|---|---|---|
+| Pacientes atendidos | Volumen asistencial | Conocer la demanda | Evolución por período | Planificar capacidad |
+| Pacientes por día | Intensidad diaria de atención | Evaluar la carga asistencial | Promedio comparable entre períodos | Optimizar la agenda |
+| Citas completadas | Utilización efectiva de la agenda | Conocer el aprovechamiento de las citas | Porcentaje del total de citas | Mejorar la eficiencia |
+| Citas canceladas | Cancelación de citas | Identificar espacios que se liberan | Porcentaje comparable entre períodos | Mejorar reprogramación y aprovechamiento |
+| Ausentismo | Pacientes que no se presentan | Vigilar la no asistencia | Porcentaje del total de citas | Diseñar recordatorios |
+| Pacientes nuevos | Captación | Evaluar incorporación de nuevos pacientes | Porcentaje del total atendido | Monitorear crecimiento |
+| Pacientes subsecuentes | Continuidad asistencial | Evaluar seguimiento de pacientes | Porcentaje del total atendido | Fortalecer continuidad |
+| Antelación de agenda | Accesibilidad | Conocer el tiempo para obtener una cita | Promedio de días | Gestionar capacidad y disponibilidad |
+| Duración promedio | Utilización del tiempo | Comprender el tiempo destinado a consulta | Promedio de minutos | Planificar la agenda |
+| Día y horario más solicitado | Preferencias de los pacientes | Identificar patrones de demanda | Comparación recurrente por día y horario | Adaptar disponibilidad |
+| Día y horario de cancelación | Patrones de cancelación | Identificar momentos de mayor cancelación | Análisis por día y franja horaria | Diseñar intervenciones dirigidas |
+| Día y horario de ausencia | Patrones de no asistencia | Identificar momentos de mayor ausentismo | Análisis por día y franja horaria | Implementar confirmaciones focalizadas |
+| Completitud del dato | Calidad de la información | Evaluar la confiabilidad de los registros | Porcentaje de campos no completados | Fortalecer la cultura de datos |
+
+Ejemplo de datos
+
+## Ejemplo de los datos utilizados
+
+| Período | Atendidos | Pacientes/día | Completadas | Canceladas | Ausentes | Nuevos | Subsecuentes | Antelación |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Ene–Feb | 234 | 15,64 | 75,27% | 22,98% | 1,75% | 15,12% | 84,88% | 28,1 días |
+| Feb–Mar | 261 | 24,59 | 70,61% | 27,70% | 1,69% | 12,40% | 87,60% | 17,5 días |
+| Mar–Abr | 258 | 21,68 | 71,65% | 26,78% | 1,57% | 14,30% | 85,70% | 20,4 días |
+| Abr–May | 247 | 20,61 | 71,07% | 27,20% | 1,72% | 16,18% | 83,02% | 23,6 días |
+| May–Jun | 234 | 18,74 | 76,12% | 22,60% | 1,28% | 15,20% | 83,40% | 25,7 días |
+| Jun–Jul | 269 | 21,35 | 72,74% | 26,06% | 1,19% | 18,63% | 81,26% | 27,7 días |
+| Jul–Ago | 261 | 22,59 | 74,71% | 23,74% | 1,56% | 18,00% | 82,00% | 24,4 días |
+| Ago–Sep | 259 | 19,55 | 73,36% | 24,39% | 2,25% | 11,00% | 89,00% | 18,5 días |
+
+
+## Prototipo del dashboard
+
+![Prototipo del Dashboard de Cultura y Liderazgo Digital de AlergoMed](Dashboard_AlergoMed_Portafolio_Final.png)
+
+**Figura 1. Prototipo del Dashboard de Cultura y Liderazgo Digital de AlergoMed.**
+
+El prototipo integra los principales indicadores de actividad asistencial, accesibilidad, estado de las citas, captación y continuidad de pacientes, duración de consulta y elementos relacionados con cultura y liderazgo digital.
+
+Hallazgos iniciales
+
+10:00 a. m. fue el horario de mayor demanda en los ocho períodos.
+
+Las cancelaciones (22,60–27,70%) tienen mayor peso que el ausentismo (1,19–2,25%).
+
+Los pacientes subsecuentes representan aproximadamente 81–89%, mostrando continuidad asistencial.
+
+La antelación varía entre 17,5 y 28,1 días, útil como indicador de accesibilidad.
+
+La calidad y completitud del dato se incorpora como parte de la cultura digital.
+
+Pivotes de evolución digital
+El material del curso presenta seis pivotes: acceso y uso de datos, agilidad operativa, innovación centrada en el cliente, ecosistemas colaborativos, alineamiento dinámico y cultura y liderazgo digital. El dashboard los integra al convertir datos operativos en información compartida y accionable.
+
+Impacto sobre la cultura y liderazgo digital
+El dashboard permite pasar de preguntar “¿cómo sentimos que está funcionando la agenda?” a preguntar “¿qué muestran los datos y qué podemos hacer para mejorar?”. Así, la visualización se convierte en una herramienta de mejora continua y no únicamente en un reporte.
+
+Conclusión
+El proyecto demuestra cómo datos generados en la actividad cotidiana de AlergoMed pueden transformarse en productos de información útiles para tomar decisiones. El valor de la transformación digital está en convertir los datos en conocimiento y utilizar ese conocimiento para mejorar la gestión y la experiencia del paciente.
+
+El dato adquiere valor cuando deja de ser únicamente un registro y se convierte en información que nos ayuda a tomar mejores decisiones.
