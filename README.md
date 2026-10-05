@@ -682,3 +682,143 @@ Sin embargo, estos datos deben complementarse progresivamente con la voz directa
 De esta manera, la transformación digital puede evolucionar desde la simple disponibilidad de datos hacia una cultura donde utilizamos esa información para diseñar mejores experiencias.
 
 > **La innovación centrada en el cliente comienza cuando dejamos de diseñar solamente desde la perspectiva de la organización y empezamos a utilizar los datos y la voz del paciente para comprender qué necesita y cómo podemos servirle mejor.**
+
+
+## Agilidad Operativa
+
+De los datos a una operación más ágil
+
+La agilidad operativa representa la capacidad de una organización para detectar cambios, interpretar información y responder oportunamente, manteniendo al mismo tiempo la estabilidad de aquellos procesos que son esenciales para su funcionamiento.
+
+El análisis de este pivote me permitió comprender que ser ágil no significa modificar constantemente los procesos ni incorporar tecnología de manera indiscriminada. La verdadera agilidad surge cuando una organización puede utilizar sus datos para identificar oportunidades de mejora, tomar decisiones oportunas y realizar pequeños ajustes que posteriormente puedan ser evaluados.
+
+El caso de DB Vertrieb permitió comprender especialmente el equilibrio entre agilidad y estabilidad. Una organización puede experimentar, aprender y adaptarse rápidamente, pero debe proteger aquellos procesos críticos cuya continuidad resulta indispensable.
+
+Esta perspectiva adquiere especial importancia en el sector salud, donde la innovación y la mejora de los procesos deben coexistir con la seguridad del paciente, la calidad de la atención, la confidencialidad de la información y la continuidad asistencial.
+
+## Aplicación en AlergoMed
+
+En AlergoMed, el dashboard que se ha venido desarrollando permite transformar los datos operativos de la consulta en información útil para identificar patrones y responder con mayor rapidez ante oportunidades de mejora.
+
+Los datos reales analizados entre enero y septiembre de 2026 muestran algunos patrones relevantes:
+
+Las consultas subsecuentes representan consistentemente más del 80 % de las citas.
+
+Se identifican horarios recurrentes de mayor agendamiento, especialmente alrededor de las 10:00–11:00 a. m. y 2:00 p. m.
+
+Las cancelaciones representan aproximadamente entre 22 % y 28 % de las citas según el período analizado.
+
+Las ausencias se mantienen en porcentajes relativamente bajos, aunque presentan variaciones mensuales.
+
+La antelación con la que se programan las citas presenta fluctuaciones y muestra una disminución hacia septiembre.
+
+Los días de mayor agendamiento, cancelaciones y ausencias pueden identificarse mediante los datos disponibles.
+
+Estos hallazgos permiten comenzar a pasar de una gestión predominantemente reactiva hacia una gestión más anticipatoria, adaptable y basada en evidencia.
+
+## Del dashboard al ciclo de mejora ágil
+
+El dashboard puede convertirse en un instrumento de agilidad operativa mediante un ciclo de mejora continua:
+
+Datos → Identificación del patrón → Decisión → Intervención → Medición → Aprendizaje → Ajuste
+
+Por ejemplo, si los datos muestran que determinados días presentan una mayor frecuencia de cancelaciones, podría implementarse una intervención específica, como modificar la estrategia o el momento de confirmación de las citas.
+
+Posteriormente, los datos permitirían evaluar si la intervención produjo alguna modificación en el comportamiento observado.
+
+La agilidad operativa no requiere necesariamente grandes transformaciones. Puede construirse mediante pequeños experimentos, medición de resultados y aprendizaje continuo.
+
+## Propuesta de microexperimento
+
+Como aplicación futura de este pivote se propone desarrollar un microexperimento orientado a mejorar la gestión de las cancelaciones.
+
+Problema identificado:
+Las cancelaciones representan una proporción relevante de las citas programadas.
+
+Hipótesis:
+Una estrategia de confirmación más cercana a la fecha de la consulta podría favorecer una identificación más temprana de las cancelaciones y aumentar la posibilidad de utilizar nuevamente los espacios liberados.
+
+Intervención propuesta:
+Implementar durante un período definido una estrategia de confirmación reforzada en determinados días u horarios y comparar posteriormente los resultados.
+
+Esta propuesta constituye una línea futura de experimentación y no representa una intervención que haya sido implementada o medida todavía.
+
+##  Nuevos indicadores propuestos
+
+El análisis de la agilidad operativa permitió identificar además una brecha en los datos actualmente disponibles.
+
+AlergoMed dispone de información sobre citas completadas, canceladas y ausencias, pero actualmente no se registra de manera estructurada qué sucede con un espacio después de que una cita es cancelada.
+
+Por esta razón, para una siguiente fase del dashboard se proponen tres nuevos indicadores:
+
+1. Porcentaje de espacios cancelados recuperados o reasignados
+
+Permitirá conocer qué proporción de los espacios liberados por una cancelación logra ser utilizada posteriormente por otro paciente.
+
+Fórmula propuesta:
+
+% de espacios recuperados = (citas canceladas posteriormente reasignadas ÷ total de citas canceladas) × 100
+
+2. Tiempo promedio para recuperar un espacio cancelado
+
+Permitirá medir cuánto tiempo transcurre entre una cancelación y la reasignación del espacio a otro paciente.
+
+3. Porcentaje de cancelaciones con suficiente antelación para permitir reasignación
+
+Permitirá conocer qué proporción de las cancelaciones ocurre con un margen de tiempo que potencialmente permita ofrecer el espacio a otro paciente.
+
+Importante: estos tres indicadores son propuestas surgidas del análisis de Agilidad Operativa. Actualmente no se dispone de los datos necesarios para calcularlos, por lo que no se presentan valores estimados ni resultados.
+
+##  La ausencia del dato también genera aprendizaje
+
+Uno de los hallazgos más importantes de este ejercicio fue comprender que un dashboard no solamente permite responder preguntas con los datos disponibles.
+
+También permite descubrir qué preguntas todavía no podemos responder y qué nuevos datos necesitamos comenzar a recopilar.
+
+En este caso, la pregunta inicial:
+
+¿Cuántas citas se cancelan?
+
+puede evolucionar hacia preguntas de mayor valor para la gestión:
+
+¿Cuántos espacios cancelados logramos recuperar?
+
+¿Cuánto tardamos en recuperarlos?
+
+¿Con cuánta anticipación necesitamos conocer una cancelación para poder reasignarla?
+
+Esto representa una evolución en la madurez del uso de datos en AlergoMed.
+
+##  Agilidad y estabilidad en una organización de salud
+
+No todos los procesos deben modificarse con la misma velocidad.
+
+En AlergoMed pueden ser objeto de experimentación y mejora continua procesos como la gestión de agenda, confirmación de citas, recordatorios, reasignación de espacios, organización de horarios y seguimiento de indicadores.
+
+Por el contrario, deben mantener altos niveles de estabilidad los procesos relacionados con la seguridad del paciente, documentación clínica, confidencialidad, prescripción y administración de tratamientos, protocolos clínicos y cumplimiento normativo.
+
+La agilidad operativa, por tanto, no significa flexibilizar aquello que protege al paciente, sino hacer más adaptables los procesos que rodean la atención sin comprometer la calidad clínica.
+
+## Evolución del dashboard
+
+La incorporación de este pivote representa un nuevo paso en la evolución del dashboard de AlergoMed.
+
+El proceso puede representarse como:
+
+Dato → Información → Decisión → Experimento → Medición → Aprendizaje → Mejora continua
+
+Y, cuando se identifica que todavía falta información:
+
+Medir → Detectar una oportunidad → Formular una nueva pregunta → Identificar el dato necesario → Recopilar → Analizar → Intervenir → Volver a medir
+
+De esta manera, el dashboard comienza a evolucionar desde una herramienta principalmente descriptiva hacia una herramienta de aprendizaje organizacional y apoyo a la toma de decisiones.
+
+## Reflexión
+
+Este pivote cambió mi manera de comprender la agilidad dentro de una organización. Inicialmente podía asociarla principalmente con incorporar nuevas herramientas, automatizar procesos o realizar cambios con mayor rapidez. Sin embargo, comprendí que una organización verdaderamente ágil es aquella que desarrolla la capacidad de observar, aprender y ajustar sus procesos continuamente.
+
+También comprendí que disponer de datos no significa necesariamente tener todas las respuestas. En este ejercicio, precisamente la ausencia de determinados datos permitió identificar nuevas preguntas y definir qué información sería importante comenzar a recopilar en el futuro.
+
+En el contexto de AlergoMed, este aprendizaje resulta especialmente relevante porque demuestra que agilidad y estabilidad no son conceptos opuestos. Podemos experimentar con la forma en que organizamos la agenda, gestionamos las cancelaciones o nos comunicamos con los pacientes, mientras mantenemos completamente estables aquellos procesos relacionados con la seguridad, la calidad clínica y la confidencialidad.
+
+Con este nuevo pivote se fortalece el propósito que ha venido tomando forma durante la construcción del portafolio: que el dashboard de AlergoMed no sea simplemente un conjunto de gráficos, sino una herramienta de gestión y transformación digital capaz de conectar los datos con decisiones, aprendizaje y mejora continua.
