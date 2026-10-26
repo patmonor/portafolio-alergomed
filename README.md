@@ -872,3 +872,75 @@ Este pivote me permitió comprender que disponer de información no equivale a u
 > **AlergoMed: del dato a la decisión, y de la decisión a la mejora continua.**
 >
 > 
+## Integración final del portafolio – AlergoMed 2026
+
+### Del dato a la decisión, y de la decisión a la mejora continua
+
+Este cierre integra los seis pivotes de evolución digital en **una sola propuesta de gestión**, construida sobre las métricas reales y agregadas de citas de AlergoMed. El propósito no es acumular gráficos, sino transformar registros operativos en preguntas, decisiones, acciones evaluables y aprendizaje organizacional.
+
+### Alcance y método
+
+Se analizaron **ocho ventanas móviles bimensuales** de enero a septiembre de 2026. Las ventanas se superponen: **no se suman** para calcular pacientes únicos o un total independiente de nueve meses. Los resultados describen las métricas disponibles; no permiten establecer causalidad ni calcular tasas por día u horario sin los denominadores correspondientes. No se publican datos identificables de pacientes.
+
+### Síntesis de los indicadores reales
+
+| Indicador | Hallazgo de la serie | Interpretación prudente |
+|---|---|---|
+| Citas atendidas por ventana | 234 a 269 | Volumen relativamente acotado entre ventanas, no pacientes únicos acumulados |
+| Citas completadas | 70,61 % a 76,12 % | Referencia de utilización de la agenda |
+| Cancelaciones | 22,60 % a 27,70 % | Oportunidad prioritaria de mejora de programación y reprogramación |
+| Ausencias | 1,19 % a 2,25 % | Menor peso que las cancelaciones |
+| Pacientes subsecuentes | 81,26 % a 89,00 % | Predominio del seguimiento, sin medir por sí solo adherencia ni resultados clínicos |
+| Antelación promedio | 17,5 a 28,1 días | Variación de accesibilidad y disponibilidad que merece seguimiento |
+| Horario más solicitado | 10:00 a. m. en las ocho ventanas | Preferencia recurrente; no equivale a mayor tasa de cancelación |
+| Duración promedio | 30,37 a 59,07 minutos | Revisar comparabilidad del valor enero–febrero antes de atribuir causas |
+
+### Los seis pivotes integrados
+
+| Pivote | Aprendizaje | Aplicación al dashboard | Decisión u oportunidad |
+|---|---|---|---|
+| Acceso y uso de datos | Un registro adquiere valor al convertirse en evidencia confiable | Diccionario de KPI, calidad y tendencias | Estandarizar datos y responsabilidades |
+| Agilidad operativa | Mejorar con experimentos medibles, sin comprometer procesos críticos | Cancelaciones, ausencias y uso de agenda | Probar confirmación y reasignación |
+| Innovación centrada en el cliente | Observar comportamiento y escuchar necesidades | Antelación, horarios, nuevos/subsecuentes | Encuesta futura y agenda adaptada |
+| Ecosistemas colaborativos | La coordinación genera valor más allá de cada área | Referencia común para clínica, administración y dirección | Piloto colaborativo de recuperación de espacios |
+| Alineamiento dinámico | Ajustar decisiones a objetivos y cambios observados | Relación entre KPI, accesibilidad, continuidad y eficiencia | Revisión periódica de prioridades |
+| Cultura y liderazgo digital | Las personas convierten información en decisiones y aprendizaje | Indicadores, acuerdos y seguimiento | Formalizar revisión y evaluación de acciones |
+
+### Propuesta de intervención transversal
+
+**Problema observado:** las cancelaciones representan entre 22,60 % y 27,70 % de las citas de las ventanas analizadas.
+
+**Hipótesis por comprobar:** una confirmación oportuna y una reprogramación sencilla podrían facilitar la reutilización de espacios cancelados.
+
+**Piloto propuesto:** coordinar al equipo administrativo, clínico y directivo para registrar la antelación de la cancelación, ofrecer espacios liberados y documentar si fueron reasignados.
+
+**Indicadores nuevos necesarios:** porcentaje de espacios cancelados recuperados, tiempo de reasignación, satisfacción con la reprogramación y acciones de mejora evaluadas. **No existen resultados medidos de este piloto en los datos actuales.**
+
+### Hoja de ruta de mejora continua
+
+| Prioridad | Acción propuesta | Evidencia de seguimiento |
+|---|---|---|
+| 1 | Definir responsables, periodicidad y diccionario de indicadores | Registro de definiciones y completitud |
+| 2 | Diseñar y evaluar un piloto de confirmación y reasignación | Cancelaciones y espacios recuperados |
+| 3 | Incorporar la voz del paciente con preguntas breves | Satisfacción y facilidad de acceso/reprogramación |
+| 4 | Revisar conjuntamente hallazgos y acciones | Decisiones documentadas, responsables y resultados |
+
+### Conclusiones finales
+
+**Primera.** AlergoMed ya genera datos operativos que permiten analizar la actividad, la accesibilidad y el comportamiento de la agenda. Su utilidad aumenta cuando se estructuran y comparan de forma consistente.
+
+**Segunda.** La cancelación de citas constituye una oportunidad prioritaria para investigar y diseñar mejoras. No podemos afirmar aún que una intervención la haya reducido: esa es una pregunta para el siguiente ciclo de medición.
+
+**Tercera.** La innovación centrada en el paciente requiere complementar las métricas de comportamiento con su voz directa, para comprender barreras y necesidades que los datos de agenda no explican.
+
+**Cuarta.** El dashboard puede funcionar como un **objeto de enlace (Boundary Object)**: una referencia compartida entre equipo clínico, administración y dirección para acordar prioridades, sin sustituir el juicio profesional.
+
+**Quinta.** Los seis pivotes convergen en una misma capacidad organizacional: pasar de datos aislados a decisiones coordinadas, intervenciones evaluables y aprendizaje continuo.
+
+### Prototipo interactivo final
+
+[**Abrir aplicación AlergoMed en Streamlit**](https://alergomed-portafolio.streamlit.app/)
+
+La aplicación incorpora una vista de **Integración final**, junto con los apartados de los seis pivotes, el dashboard ejecutivo, análisis temporal y hoja de ruta. La disponibilidad de esta versión depende de publicar primero el archivo actualizado `app.py` en el repositorio.
+
+> **AlergoMed: del dato a la decisión, y de la decisión a la mejora continua.**
